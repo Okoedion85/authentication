@@ -33,7 +33,7 @@ ALLOWED_HOSTS = config('DJANGO_ALLOWED_HOSTS', cast=Csv())
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -139,7 +139,7 @@ SPECTACULAR_SETTINGS = {
     "SERVE_INCLUDE_SCHEMA": False,
     "SERVERS": [
         {"url": "http://localhost:8000", "description": "Local Dev"},
-        {"url": "https://api-test-291i.onrender.com", "description": "Production on Render"},
+        {"url": "https://authentication-38az.onrender.com", "description": "Production on Render"},
     ],
 }
 
@@ -182,7 +182,7 @@ SITE_OTP_SECRET = config('SITE_OTP_SECRET')
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8000",
     "http://127.0.0.1:8000",
-    "https://api-test-291i.onrender.com"
+    "https://authentication-38az.onrender.com"
 ]
 CORS_ALLOW_ALL_ORIGINS = True
 
@@ -196,7 +196,7 @@ SPECTACULAR_SETTINGS = {
     "SERVE_INCLUDE_SCHEMA": False,
     "SERVERS": [
         {"url": "http://localhost:8000", "description": "Local Dev"},
-        {"url": "https://api-test-291i.onrender.com", "description": "Production on Render"},
+        {"url": "https://authentication-38az.onrender.com", "description": "Production on Render"},
     ],
 }
 
